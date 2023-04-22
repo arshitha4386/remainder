@@ -1,0 +1,40 @@
+.tableFixHead {
+    overflow-y: auto;
+    height: 106px;
+  }
+  .tableFixHead thead th {
+    position: sticky;
+    top: 0;
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    background:#E8F6EF;
+    padding: 4px;
+    position: sticky;
+    top: 0;
+  }
+  th,
+  .td {
+    padding: 8px 16px;
+    border: 1px solid #ccc;
+  }
+  .th {
+    background:#B8DFD8;
+  }
+
+ .data{
+  height: 300px;
+    overflow: hidden;
+ }
+    
+
+   .container{
+    height: 70px;
+ overflow-y: scroll;
+   }
+
+  .page_number{
+    display: flex;
+    justify-content: flex-start;
+  }

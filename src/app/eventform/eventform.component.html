@@ -1,0 +1,46 @@
+<nav class="navbar navbar-light  background-color: #e3f2fd;" >
+    <a class="navbar-brand position-relative  " href="#">
+        <div>
+            
+            <img src="../assets/NEVER-FORGET.jpg" width="150" height="150" alt="">
+        </div>
+        <!-- <div class="page_number">
+            <ul class="nav navbar-nav ">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Page 1</a></li>
+                <li><a href="#">Page 2</a></li>
+                <li><a href="#">Page 3</a></li>
+            </ul>
+        </div> -->
+    </a>
+    <button class="btn btn-primary ms-2" style="float:right; ">
+        <a routerLink="/dashboard" style="color: white"> Back</a> 
+    </button>
+
+</nav>
+<div class="row">
+    <div class="col-1"></div>
+    <div class="col-7"><table class="table table-hover table-bordered data">
+      <thead>
+            <tr>
+                <th>Sl No</th>
+                <th>Date</th>
+                <th>Event Name</th>
+                <th></th>
+            </tr>
+      </thead>
+      <tbody>
+            <tr *ngFor="let i of events;let k=index">
+                <td>{{k+1}}</td>
+
+
+                <td>{{i.date}}</td>
+                <td>{{i.event}}</td>
+                <td><button class="btn btn-primary">Edit</button>
+                    <button (click)="removeEvent(k)" class="btn btn-danger delete-button ms-2">Delete</button></td>
+               
+            </tr>
+      </tbody>
+    </table></div>
+    <div class="col-4"></div>
+</div>
